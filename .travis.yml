@@ -1,0 +1,8 @@
+language: generic
+dist: xenial
+sudo: required
+before_script:
+- go build main.go
+- ls -al
+script:
+- bash test.sh
